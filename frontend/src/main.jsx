@@ -14,11 +14,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <AuthProvider>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/' element={<App />} />
-                    <Route path='/signup' element={<Signup />} />
-                    <Route path='/signin' element={<Signin />} />
-                    <Route path='/dashboard' element={<Dashboard />} />
-                    <Route path='/transfer/:id' element={<Transfer />} />
+                    <Route path='/' >
+                    <Route path='' element={<App />} />
+                    <Route path='signup' element={<Signup />} />
+                    <Route path='signin' element={<Signin />} />
+                    <Route path='dashboard' element={<Dashboard />} />
+                    <Route path='transfer/:id' element={<Transfer />} />
+                    </Route>
                 </Routes>
             </BrowserRouter>
         </AuthProvider>
