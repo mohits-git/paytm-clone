@@ -6,7 +6,7 @@ export default function useUsers(query) {
     useEffect(() => {
         try {
             const getUsers = async () => {
-                const response = await axios.get(`http://localhost:3000/api/v1/user/bulk?filter=${query}`);
+                const response = await axios.get(`https://paytm-clone-backend-jafc.onrender.com/api/v1/user/bulk?filter=${query}`);
                 setUsers(response.data.user);
             }
             getUsers();

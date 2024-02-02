@@ -28,7 +28,7 @@ export default function SignUp() {
 
     const onSubmit = async (data) => {
         try {
-            const response = await axios.post("http://localhost:3000/api/v1/user/signup", {
+            const response = await axios.post("https://paytm-clone-backend-jafc.onrender.com/api/v1/user/signup", {
                 firstName: data.firstName,
                 lastName: data.lastName,
                 username: data.email,

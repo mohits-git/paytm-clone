@@ -9,7 +9,7 @@ export default function useBalance() {
     useEffect(() => {
         try {
             const getBalance = async () => {
-                const response = await axios.get('http://localhost:3000/api/v1/account/balance', {
+                const response = await axios.get('https://paytm-clone-backend-jafc.onrender.com/api/v1/account/balance', {
                     headers: {
                         "Authorization": `Bearer ${user}`
                     },

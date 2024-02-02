@@ -24,7 +24,7 @@ export default function TransferForm({ toUser }) {
     const onSubmit = async (data) => {
         try {
             const transferRequest = async () => {
-                await axios.post("http://localhost:3000/api/v1/account/transfer",
+                await axios.post("https://paytm-clone-backend-jafc.onrender.com/api/v1/account/transfer",
                     {
                         to: toUser,
                         amount: parseInt(data.amount)
